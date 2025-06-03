@@ -7,4 +7,4 @@ resources:
 
 images:
   - name: lucianoheric/gotogether-api
-    newTag: latest
+    newTag: qualquer-coisa
