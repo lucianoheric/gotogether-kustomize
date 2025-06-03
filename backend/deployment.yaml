@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
         - name: gotogether-api
-          image: lucianoheric/gotogether-api:latest
+          image: lucianoheric55/gotogether-api:latest
           ports:
             - containerPort: 5000
