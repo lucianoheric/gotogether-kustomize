@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: gotogether-api
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: gotogether-api
+  template:
+    metadata:
+      labels:
+        app: gotogether-api
+    spec:
+      containers:
+        - name: gotogether-api
+          image: lucianoheric/gotogether-api:latest
+          ports:
+            - containerPort: 5000
