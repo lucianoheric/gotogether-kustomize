@@ -3,10 +3,11 @@ kind: Service
 metadata:
   name: gotogether-api
 spec:
+  type: NodePort
   selector:
     app: gotogether-api
   ports:
     - protocol: TCP
       port: 80
       targetPort: 5000
-  type: ClusterIP
+      nodePort: 30001  # pode omitir para usar aleatório
